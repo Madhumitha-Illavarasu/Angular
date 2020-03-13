@@ -1,0 +1,29 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- <app-product-list></app-product-list> -->
+<!-- <app-employee></app-employee>
+<app-product></app-product> -->
+
+<!-- parent to child -->
+<!-- <h2>Parent App component</h2>
+
+<label>Enter parent value: </label>
+<input type="text" #pdata (keyup)="0"><br/>
+<label>value from child component is:</label>
+
+<app-product-child [parentData]="pdata.value"></app-product-child> -->
+
+<!-- child to parent  -->
+<!-- <h2>Parent app component</h2>
+<label>enter parent component value</label>
+<input type="text" #pdata (keyup)="0"><br/>
+<label>value from  child: {{childData}}</label>
+<app-product-child (childEvent)="catchChildEvent($event)" [parentData]="pdata.value"></app-product-child> -->
+<app-order></app-order>
+<router-outlet></router-outlet>

@@ -1,0 +1,27 @@
+<p>product-list works!</p>
+<!-- {{title}}
+{{name}}
+{{address}} -->
+
+<!-- <img src="{{logo}}" width="100px" height="100px"> -->
+<!-- <button [disabled]="buttonStatus">Submit</button> -->
+
+<!-- <button [disabled]="buttonStatus" (click)="buttonClick()">Submit</button> -->
+
+<button [disabled]="mybutton">Mybutton</button>
+<button [disabled]="secondButton" (click)="buttonClick()" (dblclick)="buttondouble()">SecondButton</button>
+
+<br/>
+<!-- Name:<input type="text"[(ngModel)]='name'/>
+<div>name is:{{name}}</div>
+Phone number:<input type="text"[(ngModel)]="phoneNum"/>
+<div>phone num:{{phoneNum}}</div>
+<br/>
+Location:<input type="text"[(ngModel)]="location"/>
+<div>location:{{location}}</div> -->
+
+<div>
+    <span *ngIf="isAvailable;then condition1 else condition2"> </span>
+    <ng-template #condition1>Condition is valid</ng-template>
+    <ng-template #condition2>Condition is invalid</ng-template>
+</div>

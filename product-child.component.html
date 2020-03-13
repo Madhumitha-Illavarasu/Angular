@@ -1,0 +1,14 @@
+<!-- parent to child -->
+<!-- 
+<h2>Child component</h2>>
+<input type="text">
+<label>value from parent is: {{parentData}}</label> -->
+
+
+<!-- child to parent -->
+
+
+<h2>child component</h2>
+<label>enter child component</label>
+<input type="text" #childtext (keyup)="onChange(childtext.value)"><br/>
+<label>value from parent is : {{parentData}}</label>
